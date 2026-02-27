@@ -149,16 +149,16 @@ function RecentResults({ results }: { results: RecentMatch[] }) {
                   <p className="text-xs text-muted mb-3">
                     {comp?.short_name ?? comp?.name ?? ""} · {formatShortDate(match.played_at)}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <span className={`text-sm font-medium ${home?.is_own_team ? "text-primary font-bold" : ""}`}>
+                  <div className="flex items-center">
+                    <span className={`flex-1 truncate text-right text-sm font-medium ${home?.is_own_team ? "text-primary font-bold" : ""}`}>
                       {home?.name ?? "Local"}
                     </span>
-                    <div className="flex items-center gap-2 rounded-md bg-surface-alt px-3 py-1">
+                    <div className="flex items-center gap-2 rounded-md bg-surface-alt px-3 py-1 mx-3 shrink-0">
                       <span className="text-lg font-bold">{match.home_score ?? 0}</span>
                       <span className="text-muted">-</span>
                       <span className="text-lg font-bold">{match.away_score ?? 0}</span>
                     </div>
-                    <span className={`text-sm font-medium ${away?.is_own_team ? "text-primary font-bold" : ""}`}>
+                    <span className={`flex-1 truncate text-sm font-medium ${away?.is_own_team ? "text-primary font-bold" : ""}`}>
                       {away?.name ?? "Visitante"}
                     </span>
                   </div>
