@@ -88,16 +88,16 @@ function RecentResults() {
             <Card key={i} className="hover:shadow-md transition-shadow">
               <CardContent className="p-5">
                 <p className="text-xs text-muted mb-3">{match.competition} · {match.date}</p>
-                <div className="flex items-center justify-between">
-                  <span className={`text-sm font-medium ${match.home === "Platzi FC" ? "text-primary font-bold" : ""}`}>
+                <div className="flex items-center">
+                  <span className={`flex-1 truncate text-right text-sm font-medium ${match.home === "Platzi FC" ? "text-primary font-bold" : ""}`}>
                     {match.home}
                   </span>
-                  <div className="flex items-center gap-2 rounded-md bg-surface-alt px-3 py-1">
+                  <div className="flex items-center gap-2 rounded-md bg-surface-alt px-3 py-1 mx-3 shrink-0">
                     <span className="text-lg font-bold">{match.homeScore}</span>
                     <span className="text-muted">-</span>
                     <span className="text-lg font-bold">{match.awayScore}</span>
                   </div>
-                  <span className={`text-sm font-medium ${match.away === "Platzi FC" ? "text-primary font-bold" : ""}`}>
+                  <span className={`flex-1 truncate text-sm font-medium ${match.away === "Platzi FC" ? "text-primary font-bold" : ""}`}>
                     {match.away}
                   </span>
                 </div>

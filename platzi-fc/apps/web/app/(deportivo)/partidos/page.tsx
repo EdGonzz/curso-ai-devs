@@ -44,8 +44,8 @@ export default function PartidosPage() {
                 <div className="flex items-center gap-2 mb-1 sm:hidden">
                   <span className="text-xs text-muted">{match.date}</span>
                 </div>
-                <div className="flex items-center justify-between gap-3">
-                  <span className={`text-sm font-medium truncate ${match.home === "Platzi FC" ? "text-primary font-bold" : ""}`}>
+                <div className="flex items-center gap-3">
+                  <span className={`flex-1 truncate text-right text-sm font-medium ${match.home === "Platzi FC" ? "text-primary font-bold" : ""}`}>
                     {match.home}
                   </span>
                   {match.status === "finished" ? (
@@ -55,9 +55,9 @@ export default function PartidosPage() {
                       <span className="text-base font-bold">{match.awayScore}</span>
                     </div>
                   ) : (
-                    <Badge variant="info">Próximo</Badge>
+                    <Badge variant="info" className="shrink-0">Próximo</Badge>
                   )}
-                  <span className={`text-sm font-medium truncate text-right ${match.away === "Platzi FC" ? "text-primary font-bold" : ""}`}>
+                  <span className={`flex-1 truncate text-sm font-medium ${match.away === "Platzi FC" ? "text-primary font-bold" : ""}`}>
                     {match.away}
                   </span>
                 </div>
