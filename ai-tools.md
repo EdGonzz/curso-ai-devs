@@ -45,7 +45,7 @@
 | Herramienta | Descripción | Enlace |
 |-------------|-------------|--------|
 | AI Skills (skills.sh) | Skills y herramientas de IA | [skills.sh](https://skills.sh) |
-| AutoSkills | Generador automático de skills por Midudev | [midudev](https://midu.dev) |
+| AutoSkills | Generador automático de skills por Midudev | [autoskills.sh](https://www.autoskills.sh/) |
 
 ## 🔍 Code Review
 
